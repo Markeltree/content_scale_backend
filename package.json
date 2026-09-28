@@ -1,0 +1,25 @@
+{
+  "name": "contentscale-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ContentScale API — Express + Supabase + Anthropic",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/server.js",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.129.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.0.0",
+    "mammoth": "^1.8.0",
+    "multer": "^2.0.2",
+    "unpdf": "^1.8.1"
+  }
+}
