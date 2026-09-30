@@ -18,7 +18,7 @@ import adminRoutes from './routes/admin.js';
 
 const app = express();
 
-const allowed = (process.env.FRONTEND_URL || 'http://localhost:3000')
+const allowed = (process.env.FRONTEND_URL || 'https://contentscalefrontend.vercel.app')
   .split(',')
   .map((s) => s.trim().replace(/\/$/, ''))
   .filter(Boolean);
