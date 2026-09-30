@@ -47,7 +47,7 @@ app.get('/api/health', (_req, res) =>
   })
 );
 
-app.use('/apis', requireAuth);
+app.use('/api', requireAuth);
 app.use('/api/me', meRoutes);
 app.use('/api/generate', generateRoutes);
 app.use('/api/assistant', assistantRoutes);
